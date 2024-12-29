@@ -12,6 +12,8 @@ struct WindowSettings {
 class Window {
 public:
     Window(const WindowSettings& settings);
+    ~Window() = default;
+
     Window(const Window&) = delete;
     Window(Window&&) = delete;
     Window& operator=(const Window&) = delete;
